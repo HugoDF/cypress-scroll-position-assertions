@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Cypress Scroll Position/Offset Demo</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    .demos {
+      display: block;
+      max-width: 1024px;
+      margin: auto;
+    }
+    .controls {
+      position: fixed;
+      top: 10px;
+      left: 50px;
+    }
+    .spacer {
+      height: 50vh;
+      border: solid 1px salmon;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="demos">
+    <div class="spacer">Spacer 1</div>
+    <div class="spacer">Spacer 2</div>
+    <div class="spacer">Spacer 3</div>
+    <div data-testid="scroll-target" data-js="scroll-target">Scroll Target</div>
+    <div class="spacer">Spacer 4</div>
+    <div class="spacer">Spacer 5</div>
+    <div class="controls">
+      <button data-testid="scroll-to-top" data-js="scroll-to-top">
+        Scroll To Top
+      </button>
+      <button data-testid="scroll-to-element" data-js="scroll-to-element">
+        Scroll To Element
+      </button>
+    </div>
+  </div>
+  <script>
+    document.querySelector('[data-js=scroll-to-top]').addEventListener('click', () => {
+      window.scroll({ top: 0, behavior: 'smooth' });
+    });
+    document.querySelector('[data-js=scroll-to-element]').addEventListener('click', () => {
+      document.querySelector('[data-js=scroll-target]').scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  </script>
+</body>
+
+</html>

@@ -1,16 +1,25 @@
 {
   "private": true,
   "scripts": {
+    "start": "serve ./src",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
     "lint": "xo .",
     "format": "xo . --fix"
   },
   "devDependencies": {
-    "xo": "latest"
+    "cypress": "^5.6.0",
+    "serve": "^11.3.2",
+    "xo": "^0.34.2"
   },
   "xo": {
     "prettier": true,
     "space": true,
-    "globals": []
+    "globals": [
+      "cy",
+      "it",
+      "beforeEach"
+    ]
   },
   "license": "MIT"
 }
