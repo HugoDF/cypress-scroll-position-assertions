@@ -1,4 +1,7 @@
 {
-  "baseUrl": "http://localhost:5000",
-  "video": false
+  "fileServerFolder": "./src",
+  "video": false,
+  "supportFile": false,
+  "fixturesFolder": false,
+  "pluginsFile": false
 }

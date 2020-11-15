@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "start": "serve ./src",
+    "dev": "serve ./src",
     "cy:open": "cypress open",
     "cy:run": "cypress run",
     "lint": "xo .",
