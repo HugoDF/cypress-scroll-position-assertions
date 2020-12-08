@@ -10,7 +10,7 @@
   "devDependencies": {
     "cypress": "^5.6.0",
     "serve": "^11.3.2",
-    "xo": "^0.34.2"
+    "xo": "^0.36.1"
   },
   "xo": {
     "prettier": true,
