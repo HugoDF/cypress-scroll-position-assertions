@@ -23,6 +23,5 @@ jobs:
         yarn lint
       env:
         CI: true
-        CYPRESS_INSTALL_BINARY: '0'
     - name: Cypress run
       uses: cypress-io/github-action@v2
