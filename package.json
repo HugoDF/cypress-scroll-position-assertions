@@ -8,7 +8,7 @@
     "format": "xo . --fix"
   },
   "devDependencies": {
-    "cypress": "^7.5.0",
+    "cypress": "^7.6.0",
     "serve": "^12.0.0",
     "xo": "^0.39.1"
   },
